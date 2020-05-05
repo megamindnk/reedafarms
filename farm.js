@@ -1,6 +1,6 @@
- 
+
 var div_img = document.getElementById("strawberry_slider");
-var img_src = ["../images/strawberries/str0.jpg","../images/strawberries/str1.jpg","../images/strawberries/str2.jpg","../images/strawberries/str4.jpg","../images/strawberries/str5.jpg","../images/strawberries/str6.jpg","../images/strawberries/str7.jpg","../images/strawberries/str8.jpg","../images/strawberries/str9.jpg","../images/strawberries/str10.jpg","../images/strawberries/str11.jpg",];
+var img_src = ["../megamindnk.github.io-reedafarms/images/str0.jpg","../megamindnk.github.io-reedafarms/images/str1.jpg","../megamindnk.github.io-reedafarms/images/str2.jpg","../megamindnk.github.io-reedafarms/images/str4.jpg","../megamindnk.github.io-reedafarms/images/str5.jpg","../megamindnk.github.io-reedafarms/images/str6.jpg","../megamindnk.github.io-reedafarms/images/str7.jpg","../megamindnk.github.io-reedafarms/images/str8.jpg","../megamindnk.github.io-reedafarms/images/str9.jpg","../megamindnk.github.io-reedafarms/images/str10.jpg","../megamindnk.github.io-reedafarms/images/str11.jpg",];
 var i=0;    
 div_img.src = img_src[0];
     setTimeout(
