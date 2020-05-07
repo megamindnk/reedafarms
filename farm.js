@@ -14,27 +14,33 @@ div_img.src = img_src[0];
 
 var mulberrytab_div = document.querySelector(".mul");
 var raspberrytab_div = document.querySelector(".rasp");
+var gogoberrytab_div = document.querySelector(".gogo");
 var mulinfotab = document.querySelector(".mulinfo");
 var raspinfotab = document.querySelector(".raspinfo"); 
+var gogoinfotab = document.querySelector(".gogoinfo");
+
 mulberrytab_div.addEventListener('click',togglemulinfo);
 raspberrytab_div.addEventListener('click',toggleraspinfo);
-
-var togglestatus = 1;
+gogoberrytab_div.addEventListener('click',togglegogoinfo);
+var togglemulstatus = 1;
 var toggleraspstatus = 1;
+var togglegogostatus = 1;
 
 function togglemulinfo(){
 
-    if(togglestatus == 1)
+    if(togglemulstatus == 1)
     {
         raspinfotab.classList.remove('show');
     mulinfotab.classList.add('show');
-    togglestatus = 0;
+    togglemulstatus = 0;
     toggleraspstatus =1;
+    gogoinfotab.classList.remove('show');
+    togglegogostatus = 1;
     }
     else
     {
         mulinfotab.classList.remove('show');
-        togglestatus=1;
+        togglemulstatus=1;
     }
 }
 function toggleraspinfo(){
@@ -43,12 +49,32 @@ function toggleraspinfo(){
     {
         mulinfotab.classList.remove('show');    
     raspinfotab.classList.add('show');
-    togglestatus = 1;    
+    togglemulstatus = 1;    
     toggleraspstatus = 0;
+    gogoinfotab.classList.remove('show');
+    togglegogostatus = 1;
     }
     else
     {
         raspinfotab.classList.remove('show');
         toggleraspstatus = 1;
+    }
+}
+function togglegogoinfo(){
+
+    if(togglegogostatus == 1)
+    {
+        mulinfotab.classList.remove('show');    
+    raspinfotab.classList.remove('show');
+    togglemulstatus = 1;    
+    toggleraspstatus = 1;
+
+    gogoinfotab.classList.add('show');
+    togglegogostatus = 0;
+    }
+    else
+    {
+        gogoinfotab.classList.remove('show');
+        togglegogostatus = 1;
     }
 }
