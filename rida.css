@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -538,4 +538,4 @@ footer #foot {
   -webkit-text-decoration: underline #020a55;
           text-decoration: underline #020a55;
 }
-/*# sourceMappingURL=rida.css.map */
+
