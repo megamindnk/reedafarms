@@ -12,30 +12,41 @@ div_img.src = img_src[0];
                 setTimeout(slider,1500)
             } ,0);
 
-var mulberrytab_div = document.querySelector(".mul");
+var mulberrytab_div = document.querySelector(".mul");                       //getting all the division tags
 var raspberrytab_div = document.querySelector(".rasp");
 var gogoberrytab_div = document.querySelector(".gogo");
 var mulinfotab = document.querySelector(".mulinfo");
 var raspinfotab = document.querySelector(".raspinfo"); 
 var gogoinfotab = document.querySelector(".gogoinfo");
 
-mulberrytab_div.addEventListener('click',togglemulinfo);
+mulberrytab_div.addEventListener('click',togglemulinfo);                   //adding click events to perform functions
 raspberrytab_div.addEventListener('click',toggleraspinfo);
 gogoberrytab_div.addEventListener('click',togglegogoinfo);
 var togglemulstatus = 1;
 var toggleraspstatus = 1;
 var togglegogostatus = 1;
 
+/*okay so how does this work 
+    well i created 3 toggle buttons to display each tab of information each initially set to 1 that is no tab is showing 
+    when we click on a tab the toggle is change to 0 i.e the tab is being shown but if other tabs are already shown it 
+    will changes its toggle to 1 and remove the element(hide it). 
+    if you want to know mkre about how this works please contact me.
+*/
+
+
+
 function togglemulinfo(){
 
     if(togglemulstatus == 1)
     {
         raspinfotab.classList.remove('show');
-    mulinfotab.classList.add('show');
-    togglemulstatus = 0;
-    toggleraspstatus =1;
-    gogoinfotab.classList.remove('show');
-    togglegogostatus = 1;
+        toggleraspstatus =1;
+        gogoinfotab.classList.remove('show');
+        togglegogostatus = 1;
+
+        mulinfotab.classList.add('show');
+        togglemulstatus = 0;
+    
     }
     else
     {
@@ -43,16 +54,20 @@ function togglemulinfo(){
         togglemulstatus=1;
     }
 }
+
+
 function toggleraspinfo(){
 
     if(toggleraspstatus == 1)
     {
-        mulinfotab.classList.remove('show');    
-    raspinfotab.classList.add('show');
+    mulinfotab.classList.remove('show');    
     togglemulstatus = 1;    
-    toggleraspstatus = 0;
     gogoinfotab.classList.remove('show');
     togglegogostatus = 1;
+    
+    raspinfotab.classList.add('show');
+    toggleraspstatus = 0;
+
     }
     else
     {
@@ -64,7 +79,7 @@ function togglegogoinfo(){
 
     if(togglegogostatus == 1)
     {
-        mulinfotab.classList.remove('show');    
+    mulinfotab.classList.remove('show');    
     raspinfotab.classList.remove('show');
     togglemulstatus = 1;    
     toggleraspstatus = 1;

@@ -1,11 +1,15 @@
 body, html {
   height: 100%;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-attachment: scroll;
   color: #020a55;
   background-color: #f7aaaa;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body #bg1 {
@@ -219,6 +223,7 @@ hr {
 }
 
 .location, .contact {
+  margin-left: 2%;
   background-color: white;
   text-align: center;
   width: 310px;
@@ -251,6 +256,7 @@ hr {
 }
 
 section {
+  background-image: linear-gradient(to bottom right, #FA0680, #f7aaaa, #FA0680);
   color: black;
   font-weight: 600;
   font-family: 'Alegreya', serif;
@@ -258,16 +264,16 @@ section {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  border-top: 2px solid #2c2a2a;
 }
 
 section h2 {
   text-decoration: underline;
   display: block;
   padding-left: 1rem;
-  color: #02410c;
+  color: #fdfcfc;
   font: 400 6vh/0.8 'Great Vibes', Helvetica, sans-serif;
   letter-spacing: 0.3vh;
+
 }
 
 .descrip {
@@ -279,7 +285,6 @@ section h2 {
 #straw {
   padding: 1rem;
   margin-left: -10px;
-  background: #4ecbf1;
   background-size: cover;
 }
 
@@ -336,7 +341,6 @@ section h2 {
 #berry {
   padding: 1rem;
   margin-left: -10px;
-  background: #9f8dd1;
   background-size: cover;
 }
 
@@ -461,7 +465,6 @@ section h2 {
 #veggie {
   padding: 1rem;
   margin-left: -10px;
-  background: #6af08b;
   background-size: cover;
   background-attachment: scroll;
   height: -webkit-max-content;
@@ -495,7 +498,7 @@ section h2 {
   text-align: center;
   font-size: 15px;
   visibility: hidden;
-  color: brown;
+  color:lightgoldenrodyellow;
   display: block;
 }
 
