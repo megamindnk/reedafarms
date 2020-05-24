@@ -14,8 +14,8 @@ body {
 body #bg1 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
           clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2a0845), color-stop(#6441A5), to(#2a0845));
-  background-image: linear-gradient(to bottom right, #2a0845, #6441A5, #2a0845);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#43cea2), color-stop(#6441A5), to(#43cea2));
+  background-image: linear-gradient(to bottom right, #43cea2, #6441A5, #43cea2);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -41,8 +41,8 @@ body #bg2 {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2a0845), color-stop(#6441A5), to(#2a0845));
-  background-image: linear-gradient(to bottom right, #2a0845, #6441A5, #2a0845);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#43cea2), color-stop(#6441A5), to(#43cea2));
+  background-image: linear-gradient(to bottom right, #43cea2, #6441A5, #43cea2);
   background-attachment: scroll;
 }
 
@@ -112,7 +112,7 @@ body .heading h1 {
   text-transform: capitalize;
   font-size: 25px;
   font-family: 'Pacifico';
-  color: black;
+  color: rgb(7, 7, 7);
   margin-left: 3%;
 }
 
@@ -250,13 +250,13 @@ hr {
 @media (min-width: 840px) {
   .contact {
     float: right;
-    margin-top: -17%;
+    margin-top: -16%;
   }
 }
 
 section {
-  background-image: linear-gradient(to bottom right, #2a0845, #6441A5, #2a0845);
-  color: black;
+  background-image: linear-gradient(to bottom right, #43cea2, #6441A5);
+  color: rgb(5, 5, 0);
   font-weight: 600;
   font-family: 'Alegreya', serif;
   width: 101%;
@@ -269,7 +269,7 @@ section h2 {
   text-decoration: underline;
   display: block;
   padding-left: 1rem;
-  color: #fdfcfc;
+  color: #fcfcfd;
   font: 400 6vh/0.8 'Great Vibes', Helvetica, sans-serif;
   letter-spacing: 0.3vh;
 
@@ -314,7 +314,7 @@ section h2 {
             transform: rotate(90deg);
     width: 40%;
     margin-right: 20%;
-    margin-top: -18%;
+    margin-top: -20%;
     float: right;
   }
 }
@@ -355,6 +355,7 @@ section h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          margin-bottom: 12%;
 }
 
 .berry_types div {
@@ -474,7 +475,7 @@ section h2 {
 .types {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
   line-height: 0;
   padding-top: 1rem;
@@ -496,14 +497,15 @@ section h2 {
 .types #veg_names {
   text-align: center;
   font-size: 15px;
+  letter-spacing: 1px;
   visibility: hidden;
-  color:rgb(32, 19, 2);
+  color:rgb(248, 243, 236);
   display: block;
 }
 
 .types .veggy_types:hover {
   border-radius: 20px;
-  background-color: rgb(235, 125, 85);
+  background-color: #4f2685;
 }
 
 .types .veggy_types:hover #veg_names {
@@ -512,7 +514,7 @@ section h2 {
 
 @media (min-width: 840px) {
   .types {
-    -ms-grid-columns: (1fr)[7];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(7, 1fr);
     margin-left: -1.5rem;
   }
